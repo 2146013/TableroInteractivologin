@@ -1,7 +1,7 @@
 # TableroInteractivologin
 Aplicación que utiliza Heroku para desplegar un tablero interactivo, en donde,  dos personas podrán ver lo que la otra dibuja interactuando entre ellas 
 y haciendo un inicio de sesion con su contraseña para poder ingresar al tablero
-[https://app-tablerointeractivo.herokuapp.com/]
+[https://app-tableinteractivo.herokuapp.com/]
 ## Instrucciones de uso
 
 * Java versión: 1.8.0
@@ -15,7 +15,7 @@ podras encontarra el tablero intectavo que en mi reposotorio esta como TableroIn
 para correr el proyecto puden usara mvn spring-boot:run,se abrira la ventana 
 donde podra dibujar e interactuar con otros usuarios haciedo uso de inicio de sesion y una contraseña.
 
-El tablero se corre en localhost:8080/login.html
+El tablero se corre en localhost:8080
 
 
 ## Pruebas de funcionamiento 
