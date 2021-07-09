@@ -19,12 +19,12 @@ El tablero se corre en localhost:8080/login.html
 
 
 ## Pruebas de funcionamiento 
-![imagen1](https://user-images.githubusercontent.com/60073527/124157657-9ebe8880-da5e-11eb-9d73-c7952a2457a4.jpeg)
-<img width="930" alt="imagen2" src="https://user-images.githubusercontent.com/60073527/124158129-2906ec80-da5f-11eb-8c10-44e873b9a71a.PNG">
-<img width="926" alt="imagen3" src="https://user-images.githubusercontent.com/60073527/124158149-2dcba080-da5f-11eb-8281-dd30b0bb2ad8.PNG">
-<img width="915" alt="imagen4" src="https://user-images.githubusercontent.com/60073527/124158165-315f2780-da5f-11eb-8124-ad1c70f1d28f.PNG">
+![imagen1]<img width="550" alt="inter2" src="https://user-images.githubusercontent.com/60073527/125018617-141bf180-e03b-11eb-9138-c6e35fee9727.PNG">
+<img width="562" alt="inter1" src="https://user-images.githubusercontent.com/60073527/125018629-18480f00-e03b-11eb-9382-d957d0fb01d1.PNG">
+
 En esta imagen se evidencia el funcionamiento del tablero y probado desde la aplicacion de heroku 
-<img width="622" alt="imagen5" src="https://user-images.githubusercontent.com/60073527/124158554-ab8fac00-da5f-11eb-8eb9-54873e4a99a4.PNG">
+<img width="512" alt="inter3" src="https://user-images.githubusercontent.com/60073527/125018599-0b2b2000-e03b-11eb-8159-9257fc6632e3.PNG">
+
 
 
 
