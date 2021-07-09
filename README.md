@@ -21,6 +21,8 @@ El tablero se corre en localhost:8080
 ## Pruebas de funcionamiento 
 ![imagen1]<img width="550" alt="inter2" src="https://user-images.githubusercontent.com/60073527/125018617-141bf180-e03b-11eb-9138-c6e35fee9727.PNG">
 <img width="562" alt="inter1" src="https://user-images.githubusercontent.com/60073527/125018629-18480f00-e03b-11eb-9382-d957d0fb01d1.PNG">
+<img width="742" alt="inter4" src="https://user-images.githubusercontent.com/60073527/125018983-b89e3380-e03b-11eb-8e39-489dfabade25.PNG">
+
 
 En esta imagen se evidencia el funcionamiento del tablero y probado desde la aplicacion de heroku 
 <img width="512" alt="inter3" src="https://user-images.githubusercontent.com/60073527/125018599-0b2b2000-e03b-11eb-8159-9257fc6632e3.PNG">
