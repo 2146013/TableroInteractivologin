@@ -1,4 +1,4 @@
-package co.edu.escuelaing.interactivebalckboardlife.configurator;
+package co.edu.escuelaing.interactivebalckboardlife.webconfigurator;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
@@ -37,9 +37,22 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
                         .password("laura")
                         .roles("USER")
                         .build();
+        UserDetails user2 =
+                User.withDefaultPasswordEncoder()
+                        .username("Daniel")
+                        .password("la")
+                        .roles("USER")
+                        .build();
 
-        InMemoryUserDetailsManager Memoryuser  = new InMemoryUserDetailsManager();
-        Memoryuser.createUser(user);
-        return(Memoryuser);
+        InMemoryUserDetailsManager userpool = new InMemoryUserDetailsManager();
+        userpool.createUser(user);
+        userpool.createUser(user2);
+        return userpool;
     }
+
+
+
+
+
+
 }

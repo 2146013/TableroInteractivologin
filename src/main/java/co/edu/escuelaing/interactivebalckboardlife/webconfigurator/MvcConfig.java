@@ -1,4 +1,4 @@
-package co.edu.escuelaing.interactivebalckboardlife.configurator;
+package co.edu.escuelaing.interactivebalckboardlife.webconfigurator;
 
 import org.springframework.context.annotation.Configuration;
 import org.springframework.web.servlet.config.annotation.ViewControllerRegistry;

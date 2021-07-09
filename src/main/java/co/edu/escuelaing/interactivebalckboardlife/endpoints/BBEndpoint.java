@@ -11,12 +11,15 @@ import java.util.logging.Level;
 import java.util.Queue;
 import java.util.concurrent.ConcurrentLinkedQueue;
 import java.util.logging.Logger;
+import javax.servlet.http.HttpServletRequest;
 import javax.websocket.OnClose;
 import javax.websocket.OnError;
 import javax.websocket.OnMessage;
 import javax.websocket.OnOpen;
 import javax.websocket.Session;
 import javax.websocket.server.ServerEndpoint;
+
+import co.edu.escuelaing.interactivebalckboardlife.repository.Memory;
 import org.springframework.stereotype.Component;
 
 
@@ -30,7 +33,8 @@ public class BBEndpoint {
     static Queue<Session> queue = new ConcurrentLinkedQueue<>();
 
     Session ownSession = null;
-
+    private Memory tMemory = Memory.getInstance();
+    private HttpServletRequest request;
     /* Call this method to send a message to all clients */
     public void send(String msg) {
         try {
@@ -52,16 +56,21 @@ public class BBEndpoint {
         this.send(message);
     }
 
+
     @OnOpen
-    public void openConnection(Session session) {
+    public void openConnection(Session session) throws IOException{
         /* Register this connection in the queue */
-        queue.add(session);
-        ownSession = session;
-        logger.log(Level.INFO, "Connection opened.");
-        try {
-            session.getBasicRemote().sendText("Connection established.");
-        } catch (IOException ex) {
-            logger.log(Level.SEVERE, null, ex);
+        if(tMemory.checkTicket(request.getRemoteHost()+"password")){
+            queue.add(session);
+            ownSession = session;
+            logger.log(Level.INFO, "Connection opened.");
+            try {
+                session.getBasicRemote().sendText("Connection established.");
+            } catch (IOException ex) {
+                logger.log(Level.SEVERE, null, ex);
+            }
+        }else {
+            ownSession.close();
         }
     }
 
